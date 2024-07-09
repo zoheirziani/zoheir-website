@@ -1,0 +1,97 @@
+{
+    "publications": [
+        {
+            "title":"Characterization of spatiotemporal chaos in arrays of nonlinear plasmonic nanoparticles",
+            "authors": ["Zoheir Ziani","Gaëtan Lévêque","Abdellatif Akjouj","Saliya Coulibaly","Abdelmajid Taki"],
+            "journal":"Physical Review B",
+            "year":2019,
+            "doi": "https://doi.org/10.1103/PhysRevA.109.013507",
+            "abstract": "We analyze the nonlinear dynamics of Fabry-Perot cavities of arbitrary finesse filled by a dispersive Kerr medium, pumped by a continuous-wave laser or a synchronous train of flat-top pulses. The combined action of feedback, group velocity dispersion, and Kerr nonlinearity leads to temporal instability with respect to perturbations at specified frequencies. We characterize the generation of new spectral bands by deriving the exact dispersion relation, and we find approximate analytical expressions for the instability threshold and gain spectrum of modulation instability (MI). We show that, in contrast to ring resonators, both the stationary solutions and the gain spectrum are significantly affected by the duration of the pump pulse. We derive the extended Lugiato-Lefever equation for the Fabry-Perot resonator (FP-LLE) starting from coupled nonlinear Schrödinger equations, and we compare the outcome of the stability analysis of the two models. While FP-LLE gives overall good results, we show regimes that are not captured by the mean-field limit, namely, the period-two modulation instability, which may appear in highly detuned or nonlinear regimes. We report numerical simulations of the generation of MI-induced Kerr combs by solving FP-LLE and the coupled Schrödinger equations."
+        },
+        {
+            "title":"Observation of modulation instability Kerr frequency combs in a fiber Fabry-Pérot resonator",
+            "authors":["Thomas Bunel", "Matteo Conforti", "Zoheir Ziani", "Julien Lumeau", "Antonin Moreau", "Arnaud Fernandez", "Olivier Llopis", "Julien Roul", "Auro M Perego", "Kenneth KY Wong", "Arnaud Mussot"],
+            "journal":"Optics Letters",
+            "year":2023,
+            "doi": "https://doi.org/10.1364/OL.479466",
+            "abstract":"We report the experimental observation of a modulation instability induced Kerr frequency comb in an all fiber Fabry–Pérot resonator. We fully characterized, in intensity and phase, the frequency comb using a commercial 10 MHz resolution heterodyne detection system to reveal more than 125 comb teeth within each of the modulation instability sidelobes. Moreover, we were able to reveal the fine temporal structure in phase and intensity of the output Turing patterns. The experimental results are generally in good agreement with numerical simulations."
+        },
+        {
+            "title":"28 THz soliton frequency comb in a continuous-wave pumped fiber Fabry-Pérot resonator",
+            "authors":["Thomas Bunel", "Matteo Conforti", "Zoheir Ziani", "Julien Lumeau", "Antonin Moreau", "Arnaud Fernandez", "Olivier Llopis", "Germain Bourcier", "Arnaud Mussot"],
+            "journal":"APL Photonics",
+            "year":2024,
+            "doi":"https://doi.org/10.1063/5.0176533",
+            "abstract":"We report the generation of an optical frequency comb featuring a 28 THz bandwidth, sustained by a single 80 fs cavity soliton recirculating in a fiber Fabry–Pérot resonator. This large spectrum is comparable to frequency combs obtained with microresonators operating in the anomalous dispersion regime. Thanks to the compact design and the easy coupling of the resonator, cavity solitons can be generated in an all-fiber experimental setup with a continuous wave pumping scheme. We also observe the generation of a dispersive wave at higher frequencies, which is supported by higher-order dispersion. These observations align remarkably well with both numerical simulations and the established theory of cavity solitons."
+        },
+        {
+            "title":"Theory of modulation instability in Kerr Fabry-Perot resonators beyond the mean-field limit",
+            "authors":["Zoheir Ziani","Thomas Bunel","Auro M. Perego","Arnaud Mussot","Matteo Conforti"],
+            "journal":"Physical Review A",
+            "year":2024,
+            "doi":"https://doi.org/10.1103/PhysRevA.109.013507",
+            "abstract":"We analyze the nonlinear dynamics of Fabry-Perot cavities of arbitrary finesse filled by a dispersive Kerr medium, pumped by a continuous-wave laser or a synchronous train of flat-top pulses. The combined action of feedback, group velocity dispersion, and Kerr nonlinearity leads to temporal instability with respect to perturbations at specified frequencies. We characterize the generation of new spectral bands by deriving the exact dispersion relation, and we find approximate analytical expressions for the instability threshold and gain spectrum of modulation instability (MI). We show that, in contrast to ring resonators, both the stationary solutions and the gain spectrum are significantly affected by the duration of the pump pulse. We derive the extended Lugiato-Lefever equation for the Fabry-Perot resonator (FP-LLE) starting from coupled nonlinear Schrödinger equations, and we compare the outcome of the stability analysis of the two models. While FP-LLE gives overall good results, we show regimes that are not captured by the mean-field limit, namely, the period-two modulation instability, which may appear in highly detuned or nonlinear regimes. We report numerical simulations of the generation of MI-induced Kerr combs by solving FP-LLE and the coupled Schrödinger equations."
+        },
+        {
+            "title":"Investigating route to chaos in nonlinear plasmonic dimer",
+            "authors": ["Zoheir Ziani","Gaëtan Lévêque","Abdellatif Akjouj","Saliya Coulibaly","Abdelmajid Taki"],
+            "journal":"Annalen der Physik",
+            "year":2020,
+            "doi": "https://doi.org/10.1002/andp.202000240",
+            "abstract": "The route to chaos of a plasmonic dimer formed of two identical nanoparticles with Kerr-type nonlinear response and illuminated by an external electric field is reported. It is shown that this system has a complex dynamical behavior with chaotic nature. This complexity is analyzed using Lyapunov exponents, the Kaplan–Yorke dimension, and correlation dimensions. The existence of familiar period-doubling sequences route to chaos is pointed out, and domains corresponding to the onset of period doubling and chaos in the plane of parameters are evidenced."
+        },
+        {
+            "title":"Impact of pump pulse duration on modulation instability Kerr frequency combs in fiber Fabry-Pérot resonators",
+            "authors":["Thomas Bunel", "Zoheir Ziani", "Matteo Conforti", "Julien Lumeau", "Antonin Moreau", "Arnaud Fernandez", "Olivier Llopis", "Germain Bourcier", "Auro M Perego", "Arnaud Mussot"],
+            "journal":"Optics Letters",
+            "year":2023,
+            "doi":"https://doi.org/10.1364/OL.506100",
+            "abstract":"We report an experimental investigation on the impact of the pump pulse duration on the modulation instability process in fiber Fabry–Pérot resonators. We demonstrate that cross-phase modulation between the forward and the backward waves alters significantly the modulation instability process. By varying the pump pulse duration, we show the modification of the modulation instability threshold and frequency. These experimental observations are in excellent agreement with theoretical predictions."
+        }
+    ],
+    "conferences": [
+        {
+            "title": "Kerr frequency comb generation in normal dispersion fiber Fabry-Perot resonators via switching waves excitation",
+            "year": 2024,
+            "url":"",
+            "conference": "Nonlinear Optics and its Applications",
+            "authors": ["Thomas Bunel", "Matteo Conforti", "Zoheir Ziani", "Julien Lumeau", "Antonin Moreau", "Arnaud Fernandez", "Olivier Llopis", "Germain Bourcier", "Arnaud Mussot"]
+        },
+        {
+            "title": "Optical frequency combs induced by modulation instability in fiber Fabry-Pérot resonators: impact of the pump pulse duration",
+            "year": 2024,
+            "url":"",
+            "conference": "European Quantum Electronics Conference",
+            "authors": ["Thomas Bunel", "Matteo Conforti", "Zoheir Ziani", "Julien Lumeau", "Antonin Moreau", "Arnaud Fernandez", "Olivier Llopis", "Julien Roul", "Auro M Perego", "Kenneth KY Wong", "Arnaud Mussot"]
+        },
+        {
+            "title": "Optical frequency combs induced by modulation instability in fiber Fabry-Pérot resonators: impact of the pump pulse duration",
+            "year": 2023,
+            "url":"",
+            "conference": "Real-time Measurements, Rogue Phenomena, and Single-Shot Applications VIII",
+            "authors": ["Abdelmajid Taki", "Zoheir Ziani", "Gaëtan Lévêque", "Saliya Coulibaly", "Abdellatif Akjouj"]
+        },
+        {
+            "title": "Recent progresses in Fiber Fabry Perot resonators for frequency comb generation",
+            "year": 2023,
+            "url":"",
+            "conference": "Solvay workshop on Dissipative solitons, turbulence and extreme events in nonlinear photonics",
+            "authors": ["Thomas Bunel", "Matteo Conforti", "Zoheir Ziani", "Julien Lumeau", "Antonin Moreau", "Arnaud Fernandez", "Olivier Llopis", "Julien Roul", "Auro M Perego", "Arnaud Mussot"]
+        },
+        {
+            "title": "Unexpected Phase locked Brillouin assisted Kerr Combs",
+            "year": 2023,
+            "url":"",
+            "conference": "XIX Instabilities and Nonequilibrium Structures-INES",
+            "authors": ["Thomas Bunel", "Matteo Conforti", "Zoheir Ziani", "Julien Lumeau", "Antonin Moreau", "Arnaud Fernandez", "Olivier Llopis", "Julien Roul", "Auro M Perego", "Arnaud Mussot"]
+        },
+        {
+            "title":"Characterization of spatiotemporal chaos in arrays of nonlinear plasmonic nanoparticles",
+            "year": 2018,
+            "url":"",
+            "conference": "Near-field Optics 15",
+            "authors": ["Zoheir Ziani","Gaëtan Lévêque","Abdellatif Akjouj","Saliya Coulibaly","Abdelmajid Taki"]
+        }
+    ],
+    "workshops": []
+}

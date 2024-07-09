@@ -1,1 +1,219 @@
+// JavaScript HTML DOM EventListener
+document.addEventListener('DOMContentLoaded', function () {
+    // Get the current year
+    let currentDate = new Date();
+    let currentYear = currentDate.getFullYear();
+    // Find the element with the id "currentYear"
+    let currentYearElement = document.getElementById("currentYear");
+    // Check if the element exists before updating its content
+    if (currentYearElement) {
+        // Update the content of the element with the current year
+        currentYearElement.textContent = currentYear.toString();
+        currentYearElement.setAttribute("datetime", currentYear.toString());
+    }
+    else {
+        console.error('Element with ID "currentYear" not found.');
+    }
+    // Country list in the contact form
+    const countries = ["Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antigua and Barbuda", "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bhutan", "Bolivia", "Bosnia and Herzegovina", "Botswana", "Brazil", "Brunei", "Bulgaria", "Burkina Faso", "Burundi", "Cabo Verde", "Cambodia", "Cameroon", "Canada", "Central African Republic", "Chad", "Chile", "China", "Colombia", "Comoros", "Congo, Democratic Republic of the", "Congo, Republic of the", "Costa Rica", "Croatia", "Cuba", "Cyprus", "Czech Republic", "Denmark", "Djibouti", "Dominica", "Dominican Republic", "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea", "Estonia", "Eswatini", "Ethiopia", "Fiji", "Finland", "France", "Gabon", "Gambia", "Georgia", "Germany", "Ghana", "Greece", "Grenada", "Guatemala", "Guinea", "Guinea-Bissau", "Guyana", "Haiti", "Honduras", "Hungary", "Iceland", "India", "Indonesia", "Iran", "Iraq", "Ireland", "Israel", "Italy", "Jamaica", "Japan", "Jordan", "Kazakhstan", "Kenya", "Kiribati", "Korea, North", "Korea, South", "Kosovo", "Kuwait", "Kyrgyzstan", "Laos", "Latvia", "Lebanon", "Lesotho", "Liberia", "Libya", "Liechtenstein", "Lithuania", "Luxembourg", "Madagascar", "Malawi", "Malaysia", "Maldives", "Mali", "Malta", "Marshall Islands", "Mauritania", "Mauritius", "Mexico", "Micronesia", "Moldova", "Monaco", "Mongolia", "Montenegro", "Morocco", "Mozambique", "Myanmar", "Namibia", "Nauru", "Nepal", "Netherlands", "New Zealand", "Nicaragua", "Niger", "Nigeria", "North Macedonia", "Norway", "Oman", "Pakistan", "Palau", "Palestine", "Panama", "Papua New Guinea", "Paraguay", "Peru", "Philippines", "Poland", "Portugal", "Qatar", "Romania", "Russia", "Rwanda", "Saint Kitts and Nevis", "Saint Lucia", "Saint Vincent and the Grenadines", "Samoa", "San Marino", "Sao Tome and Principe", "Saudi Arabia", "Senegal", "Serbia", "Seychelles", "Sierra Leone", "Singapore", "Slovakia", "Slovenia", "Solomon Islands", "Somalia", "South Africa", "South Sudan", "Spain", "Sri Lanka", "Sudan", "Suriname", "Sweden", "Switzerland", "Syria", "Taiwan", "Tajikistan", "Tanzania", "Thailand", "Timor-Leste", "Togo", "Tonga", "Trinidad and Tobago", "Tunisia", "Turkey", "Turkmenistan", "Tuvalu", "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom", "United States", "Uruguay", "Uzbekistan", "Vanuatu", "Vatican City", "Venezuela", "Vietnam", "Yemen", "Zambia", "Zimbabwe"];
+    const countrySelect = document.getElementById("country");
+    if (countrySelect) {
+        countries.forEach(country => {
+            const option = document.createElement("option");
+            option.value = country;
+            option.textContent = country;
+            countrySelect.appendChild(option);
+        });
+    }
+    // Update the paragraph content based on the current page
+    // Get the pathname from the URL
+    const pathname = window.location.pathname;
+    // Split the pathname into segments
+    const segments = pathname.split('/');
+    // Get the last segment which should be the page name
+    let pageName = segments.pop() || '';
+    // Remove the .html extension if it exists
+    if (pageName.endsWith('.html')) {
+        pageName = pageName.slice(0, -5);
+    }
+    const pageDescriptionElement = document.getElementById('page-description');
+    // Update the paragraph content based on the current page
+    switch (pageName) {
+        case 'contact':
+            pageDescriptionElement.textContent = 'Contact me for inquiries, collaborations, or just to say hello!';
+            break;
+        case 'portfolio':
+            pageDescriptionElement.textContent = 'Explore my portfolio of projects and creative works.';
+            break;
+        case 'academic':
+            pageDescriptionElement.textContent = 'Learn about my research interests and my academic experiences';
+            break;
+        case 'research':
+            pageDescriptionElement.textContent = 'Discover my research interests, publications, and contributions to academia.';
+            break;
+        case 'teaching':
+            pageDescriptionElement.textContent = 'Learn about my teaching philosophy, courses, and academic experiences.';
+            break;
+        case 'resume':
+            pageDescriptionElement.textContent = 'View my professional resume detailing my education, work experience, and skills.';
+            break;
+        default:
+            pageDescriptionElement.textContent = 'Delve into my professional profile, research interests, and contributions.';
+            break;
+    }
+    // show all links
+    function updateSocialMedia() {
+        // Update social media liks in the header
+        const socialMediaContainer = document.getElementById('social-media');
+        const socialMediaLinks = Array.prototype.slice.call(socialMediaContainer.children);
+        for (let i = socialMediaLinks.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [socialMediaLinks[i], socialMediaLinks[j]] = [socialMediaLinks[j], socialMediaLinks[i]];
+        }
+        // Remove existing links
+        socialMediaContainer.innerHTML = '';
+        // Show only the first four links
+        const linksToShow = socialMediaLinks.slice(0, 4);
+        linksToShow.forEach(link => socialMediaContainer.appendChild(link));
+    }
+    fetch('data/social-media.json')
+        .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+        .then((data) => {
+        const articlesContainer = document.getElementById('social-media');
+        if (articlesContainer) {
+            articlesContainer.innerHTML = data.social_media.map((social, index) => `
+            <a href="${social.url}" target="_blank" rel="noopener noreferrer" title="${social.title}">
+                <img src="${social.icon}" alt="${social.name}"  height="24">
+            </a>
+            `).join('');
+            updateSocialMedia();
+        }
+    })
+        .catch(error => {
+        console.error('Failed to fetch social media links:', error);
+    });
+    // Portfolio filter functionality
+    const buttons = document.querySelectorAll('[data-filter]');
+    const items = document.querySelectorAll('.portfolio-item');
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            const filter = button.getAttribute('data-filter');
+            // Remove "active" class from all buttons
+            buttons.forEach(btn => btn.classList.remove('active'));
+            // Add "active" class to the clicked button
+            button.classList.add('active');
+            items.forEach(item => {
+                const category = item.getAttribute('data-category');
+                if (filter === 'all' || category === filter) {
+                    item.style.display = 'flex';
+                }
+                else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    });
+    // Show publications
+    fetch('data/research.json')
+        .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+        .then((data) => {
+        const articlesContainer = document.getElementById('articles');
+        const conferencesContainer = document.getElementById('conferences');
+        if (articlesContainer) {
+            articlesContainer.innerHTML = data.publications.map((publication, index) => `
+            <article>
+                <h4>${index + 1}/ ${publication.title}</h4>
+                <p>${formatAuthorsWithHighlight(publication.authors)}</p>
+                <p>Published in <em>${publication.journal}</em> (${publication.year})</p>
+                <p>DOI: <a href="${publication.doi}" target="_blank">${publication.doi}</a></p>
+                <a href="${publication.pdf}" target="_self"><img src="/assets/icons/pdf.png" alt="PDF icon"></a>
+            </article>
+            `).join('');
+        }
+        if (conferencesContainer) {
+            conferencesContainer.innerHTML = data.conferences.map((conference, index) => `
+            <article>
+                <h4>${index + 1}/ ${conference.title}</h4>
+                <p>${formatAuthorsWithHighlight(conference.authors)}</p>
+                <p>Presented at <em>${conference.conference}</em> (${conference.year})</p>
+                <a href="${conference.url}" target="_self"><img src="/assets/icons/link.png" alt="PDF icon"></a>
+            </article>
+            `).join('');
+        }
+    })
+        .catch(error => {
+        console.error('Failed to fetch articles:', error);
+    });
+});
+window.addEventListener("scroll", function () {
+    let toTopButton = document.getElementById("scroll-to-top");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        toTopButton.style.display = "block";
+    }
+    else {
+        toTopButton.style.display = "none";
+    }
+});
+// Functions
+// Function to format authors
+function formatAuthors(authors) {
+    const maxAuthorsToShow = 5;
+    if (authors.length > maxAuthorsToShow) {
+        // Show first three authors and "et al." for others
+        return `${authors.slice(0, 3).join(', ')} et al.`;
+    }
+    else {
+        // Join all authors
+        return authors.join(', ');
+    }
+}
+// Function to format authors with special handling for "Zoheir Ziani"
+function formatAuthorsWithHighlight(authors) {
+    const highlightedAuthor = "Zoheir Ziani";
+    const formattedAuthors = authors.map(author => {
+        if (author === highlightedAuthor) {
+            return `<strong>${author}</strong>`;
+        }
+        else {
+            return author;
+        }
+    });
+    return formatAuthors(formattedAuthors);
+}
+// onclick function
+function toTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+// onvalidate function
+function validateForm() {
+    // Get form elements
+    const form = document.forms.namedItem("contact");
+    const nameInput = form.elements.namedItem("name");
+    const countrySelect = form.elements.namedItem("country");
+    // Validate the name field (no numbers or special characters)
+    const name = nameInput.value;
+    const namePattern = /^[a-zA-Z\s]+$/;
+    if (!namePattern.test(name)) {
+        alert("Please enter a valid name with only letters.");
+        return false;
+    }
+    // Validate the country field (must select a country)
+    const country = countrySelect.value;
+    if (country === "") {
+        alert("Please select a country.");
+        return false;
+    }
+    return true;
+}
 //# sourceMappingURL=script.js.map
