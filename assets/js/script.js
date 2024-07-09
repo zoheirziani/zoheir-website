@@ -84,9 +84,9 @@ document.addEventListener('DOMContentLoaded', function () {
         return response.json();
     })
         .then((data) => {
-        const articlesContainer = document.getElementById('social-media');
-        if (articlesContainer) {
-            articlesContainer.innerHTML = data.social_media.map((social, index) => `
+        const socialMediaContainer = document.getElementById('social-media');
+        if (socialMediaContainer) {
+            socialMediaContainer.innerHTML = data.social_media.map((social, index) => `
             <a href="${social.url}" target="_blank" rel="noopener noreferrer" title="${social.title}">
                 <img src="${social.icon}" alt="${social.name}"  height="24">
             </a>
