@@ -116,8 +116,41 @@
         <!-- Main Content -->
         <main>
             <section>
-                <h2>Portfolio</h2>
-                <p>Hold tight! This page is under construction. I'm building something amazing and it will be ready soon!</p>
+                <h2>Portfolio <a href="/feed.rss" title="RSS Feed"><img src="/assets/icons/feed.png" alt="RSS Feed" height="20"></a></h2>
+                <p>I am currently working on this section of the website. I apologize for any inconvenience and appreciate your patience. Please check back later.</p>
+            </section>
+            
+            <section>
+                <h2>Gallerie</h2>
+                <div class="filter">
+                    <button data-filter="all" class="active">Show all</button>
+                    <button data-filter="physics">Physics</button>
+                    <button data-filter="web">Web</button>
+                    <button data-filter="others">Other</button>
+                </div>
+                <div class="portfolio">
+                    <a href="" target="_self" class="portfolio-item" data-category="physics">
+                        <img src="/assets/images/projects/LyapunovExponents.png" alt="Lyapunov Exponents">
+                        <div class="description">
+                            <h3>Lyapunov Exponents</h3>
+                            <p>Mathematical tool used in chaos theory</p>
+                        </div>
+                    </a>
+                    <a href="" target="_self" class="portfolio-item" data-category="web">
+                        <img src="/assets/images/projects/calculator.png" alt="Calculator">
+                        <div class="description">
+                            <h3>Calculator</h3>
+                            <p>A scientific calculator</p>
+                        </div>
+                    </a>
+                    <a href="" target="_self" class="portfolio-item" data-category="others">
+                        <img src="/assets/images/projects/LaTeX.png" alt="LaTeX CV">
+                        <div class="description">
+                            <h3>LaTeX CV Template</h3>
+                            <p>A class to create CV in LaTeX</p>
+                        </div>
+                    </a>
+                </div>
             </section>
         </main>
         <!-- Footer -->

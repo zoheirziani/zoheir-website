@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Lyapunov Exponents",
+        "description": "Mathematical tool used in chaos theory",
+        "category": "physics",
+        "link": "",
+        "imgSrc": "/assets/images/projects/LyapunovExponents.png",
+        "imgAlt": "Lyapunov Exponents"
+    },
+    {
+        "title": "Calculator",
+        "description": "A scientific calculator",
+        "category": "web",
+        "link": "",
+        "imgSrc": "/assets/images/projects/calculator.png",
+        "imgAlt": "Calculator"
+    },
+    {
+        "title": "LaTeX CV Template",
+        "description": "A class to create CV in LaTeX",
+        "category": "others",
+        "link": "",
+        "imgSrc": "/assets/images/projects/LaTeX.png",
+        "imgAlt": "LaTeX"
+    }
+]

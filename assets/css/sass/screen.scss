@@ -478,7 +478,7 @@ summary {
         margin: 0;
         padding: var(--spacing-xs);
     }
-    img {
+    img, >a {
         position: absolute;
         right: 5px;
         bottom: 5px;

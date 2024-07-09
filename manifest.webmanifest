@@ -1,0 +1,50 @@
+{
+    "id" : "",
+    "name" : "Zoheir Ziani",
+    "short_name" : "Double Z",
+    "lang": "en",
+    "categories" : "",
+    "background_color": "#e8e8e8",
+    "description": "Zoheir Ziani application",
+    "dir": "ltr",
+    "start_url" : "/",
+    "scope" : "/",
+    "theme_color" : "#e8e8e8",
+    "display" : "standalone",
+    "orientation" : "landscape",
+    "icons" : [
+        {
+            "src" : "assets/favicon/icon.webp",
+            "sizes" : "48x48",
+            "types" : "image/webp",
+            "purpose" : "any"
+        },
+        {
+            "src" : "assets/favicon/icon.ico",
+            "sizes" : "72x72 96x96 128x128 256x256",
+            "types" : "image/x-icon",
+            "purpose" : "any"
+        },
+        {
+            "src" : "assets/favicon/icon.svg",
+            "sizes" : "any",
+            "types" : "image/svg+xml",
+            "purpose" : "any"
+        }
+    ],
+    "related_applications" : [
+        {
+            "id" : "",
+            "platform" : "",
+            "url" : ""
+        }
+    ],
+    "shortcuts" : [
+        {
+            "name" : "",
+            "url" : "",
+            "description" : ""
+        }
+    ],
+    "prefer_related_applications": "false"
+}

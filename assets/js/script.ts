@@ -189,7 +189,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <h4>${index + 1}/ ${conference.title}</h4>
                 <p>${formatAuthorsWithHighlight(conference.authors)}</p>
                 <p>Presented at <em>${conference.conference}</em> (${conference.year})</p>
-                <a href="${conference.url}" target="_self"><img src="/assets/icons/link.png" alt="PDF icon"></a>
+                <a href="${conference.url}" target="_self">&#x21F2;</a>
             </article>
             `).join('');
         }
