@@ -53,35 +53,35 @@
         {
             "title": "Kerr frequency comb generation in normal dispersion fiber Fabry-Perot resonators via switching waves excitation",
             "year": 2024,
-            "url":"",
-            "conference": "Nonlinear Optics and its Applications",
+            "url":"https://opg.optica.org/abstract.cfm?uri=CLEO_SI-2024-SF1Q.5",
+            "conference": "CLEO: Science and Innovations",
             "authors": ["Thomas Bunel", "Matteo Conforti", "Zoheir Ziani", "Julien Lumeau", "Antonin Moreau", "Arnaud Fernandez", "Olivier Llopis", "Germain Bourcier", "Arnaud Mussot"]
         },
         {
             "title": "Optical frequency combs induced by modulation instability in fiber Fabry-Pérot resonators: impact of the pump pulse duration",
             "year": 2024,
-            "url":"",
+            "url":"https://opg.optica.org/abstract.cfm?uri=eqec-2023-ef_3_3",
             "conference": "European Quantum Electronics Conference",
             "authors": ["Thomas Bunel", "Matteo Conforti", "Zoheir Ziani", "Julien Lumeau", "Antonin Moreau", "Arnaud Fernandez", "Olivier Llopis", "Julien Roul", "Auro M Perego", "Kenneth KY Wong", "Arnaud Mussot"]
         },
         {
-            "title": "Optical frequency combs induced by modulation instability in fiber Fabry-Pérot resonators: impact of the pump pulse duration",
+            "title": "Complex dynamics in a spatio-temporal regime in a chain of plasmonic nanoparticles",
             "year": 2023,
-            "url":"",
+            "url":"https://www.spiedigitallibrary.org/conference-proceedings-of-spie/PC12406/PC1240601/Complex-dynamics-in-a-spatio-temporal-regime-in-a-chain/10.1117/12.2652077.short#_=_",
             "conference": "Real-time Measurements, Rogue Phenomena, and Single-Shot Applications VIII",
             "authors": ["Abdelmajid Taki", "Zoheir Ziani", "Gaëtan Lévêque", "Saliya Coulibaly", "Abdellatif Akjouj"]
         },
         {
             "title": "Recent progresses in Fiber Fabry Perot resonators for frequency comb generation",
             "year": 2023,
-            "url":"",
+            "url":"https://hal.science/hal-04536424v1",
             "conference": "Solvay workshop on Dissipative solitons, turbulence and extreme events in nonlinear photonics",
             "authors": ["Thomas Bunel", "Matteo Conforti", "Zoheir Ziani", "Julien Lumeau", "Antonin Moreau", "Arnaud Fernandez", "Olivier Llopis", "Julien Roul", "Auro M Perego", "Arnaud Mussot"]
         },
         {
             "title": "Unexpected Phase locked Brillouin assisted Kerr Combs",
             "year": 2023,
-            "url":"",
+            "url":"https://hal.science/hal-04536341/",
             "conference": "XIX Instabilities and Nonequilibrium Structures-INES",
             "authors": ["Thomas Bunel", "Matteo Conforti", "Zoheir Ziani", "Julien Lumeau", "Antonin Moreau", "Arnaud Fernandez", "Olivier Llopis", "Julien Roul", "Auro M Perego", "Arnaud Mussot"]
         },
@@ -91,6 +91,34 @@
             "url":"",
             "conference": "Near-field Optics 15",
             "authors": ["Zoheir Ziani","Gaëtan Lévêque","Abdellatif Akjouj","Saliya Coulibaly","Abdelmajid Taki"]
+        },
+        {
+            "title": "Unexpected SBS phase locked broadband frequency comb in fiber Fabry Perot resonators",
+            "year": 2024,
+            "url":"",
+            "conference": "10th International Conference on Antennas and Electromagnetic Systems",
+            "authors": ["Thomas Bunel", "Matteo Conforti", "Zoheir Ziani", "Julien Lumeau", "Antonin Moreau", "Arnaud Fernandez", "Olivier Llopis", "Julien Roul", "Auro M Perego", "Arnaud Mussot"]
+        },
+        {
+            "title": "Recent progresses in frequency comb in fiber generation in high Q fiber Fabry Perot resonators",
+            "year": 2024,
+            "url":"",
+            "conference": "Photon 2024",
+            "authors": ["Thomas Bunel", "Matteo Conforti", "Zoheir Ziani", "Julien Lumeau", "Antonin Moreau", "Arnaud Fernandez", "Olivier Llopis", "Julien Roul", "Auro M Perego", "Arnaud Mussot"]
+        },
+        {
+            "title": "Broadband frequency combs in high finesse fiber Fabry Perot resonators",
+            "year": 2024,
+            "url":"",
+            "conference": "Photonics Lapland Conference 2024",
+            "authors": ["Thomas Bunel", "Matteo Conforti", "Zoheir Ziani", "Julien Lumeau", "Antonin Moreau", "Arnaud Fernandez", "Olivier Llopis", "Julien Roul", "Auro M Perego", "Arnaud Mussot"]
+        },
+        {
+            "title": "Broadband frequency combs in high finesse fiber Fabry Perot resonators",
+            "year": 2024,
+            "url":"",
+            "conference": "Photonics Lapland Conference 2024",
+            "authors": ["Thomas Bunel", "Matteo Conforti", "Zoheir Ziani", "Julien Lumeau", "Antonin Moreau", "Arnaud Fernandez", "Olivier Llopis", "Julien Roul", "Auro M Perego", "Arnaud Mussot"]
         }
     ],
     "workshops": []
